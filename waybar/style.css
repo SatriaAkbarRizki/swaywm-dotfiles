@@ -1,0 +1,145 @@
+* {;
+    font-family: roboto  Mono Medium;
+    font-size: 14px;
+    animation-timing-function: steps(12);
+    font-weight: bold;
+}
+
+
+window#waybar {
+    background-color: #1f1e2e;
+    border-bottom: none;
+    color: #F6F4EB;
+    transition-property: background-color;
+    transition-duration: 0.5s; 
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+    color: #000000;
+    opacity: 0;
+}
+
+#workspaces button {
+    padding: 0 20px; 
+    border-radius: 0;
+}
+
+#workspaces button:hover {
+    color: #D2E3C8;
+    text-shadow: inherit;
+    box-shadow: inherit;
+    border-bottom: none;
+    border-radius: 10px;
+}
+
+#workspaces button.focused {
+    color: #3E3232;
+    background-color: #FFBE98;
+    border-bottom: none;
+    border-radius: 10px;
+}
+
+#workspaces button.urgent {
+    background-color: #2c303c;
+}
+
+#mode {
+  
+    background-color: #64727d;
+    border-bottom: 3px solid #ffffff;
+}
+
+
+#clock,
+#battery,
+#network,
+#pulseaudio, 
+#mode, 
+#idle_inhibitor,
+#mpd,
+#tray
+#custom-powermenu
+
+#mpd{
+    border-radius: 10;
+    padding: 0 10px;
+    margin: 0 0px;
+}
+
+#clock {
+   	
+}
+
+#battery {
+      
+}
+
+#battery.charging {
+   
+}
+
+@keyframes blink {
+    to {
+        background-color: #ebdbb2;
+        color: #282828;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: #ce2828;
+    color: #fdfffd;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#tray{
+        border-radius: 10px;
+        padding: 0px 10px 0 10px;
+}
+
+#backlight {
+    
+}
+
+#network {
+  
+}
+
+#network.disconnected {
+    
+}
+
+
+#idle_inhibitor {
+    background-color: rgba(0, 0, 0, 0);
+    color: #ebdbb2;
+    border-radius: 5px;
+    margin-right: 2px;
+    margin-left: 3px;
+}
+
+#idle_inhibitor.activated {
+    background-color: #ebdbb2;
+    color: #282828;
+    border-radius: 5px;
+    margin-right: 2px;
+    margin-left: 5px;
+}
+
+#custom-powermenu{
+        color: #3E3232;
+	border-radius:10px;
+        background-color: #FFBE98;
+	padding: 5px 20px;
+	margin-top:5px;
+	margin-right: 0px;
+}

@@ -1,0 +1,23 @@
+configuration {
+  modes: [ combi ];
+  combi-modes: [ window, drun, run ];
+}
+
+
+@theme "android_notification"
+ 
+/* Insert theme modifications after this */
+
+entry {
+    placeholder: "Type here";
+}
+
+
+element {
+  orientation: horizontal;
+  children: [ element-text, element-icon ];
+  spacing: 5px;
+}
+
+
+
